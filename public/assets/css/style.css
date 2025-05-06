@@ -1,8 +1,8 @@
-*{
-    padding:0;
-    margin :0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     text-decoration: none;
     list-style: none;
@@ -10,36 +10,37 @@
     text-transform: capitalize;
     transition: all 0.3s ease;
 }
-body{
+body {
     background: #f2f2f2;
 }
-.container{
+.container {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
-.container .box{
-    background: #05184C;
+.container .box {
+    background: #05184c;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
-h1{
+h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #fff;
 }
-label{
+label {
     font-size: 1.2rem;
     color: #fff;
 }
-.container .box form .card{
+.container .box form .card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.container .box form input[type="number"], .container .box form select {
+.container .box form input[type="number"],
+.container .box form select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -48,9 +49,10 @@ label{
     color: #333;
     outline: none;
 }
-button{
+button,
+.button {
     background: #fff;
-    color: #05184C;
+    color: #05184c;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -58,8 +60,18 @@ button{
     font-size: 1.2rem;
     transition: all 0.3s ease;
 }
-button:hover{
-    border:1px solid #fff;
+button:hover, .button:hover {
+    border: 1px solid #fff;
     background: none;
     color: #fff;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    width: 15em;
+    transform: translateX(230%);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
