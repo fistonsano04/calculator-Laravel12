@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    color: #000;
     text-decoration: none;
     list-style: none;
     text-align: center;
@@ -13,4 +12,54 @@
 }
 body{
     background: #f2f2f2;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.container .box{
+    background: #05184C;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+label{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.container .box form .card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.container .box form input[type="number"], .container .box form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid brown;
+    color: #333;
+    outline: none;
+}
+button{
+    background: #fff;
+    color: #05184C;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+button:hover{
+    border:1px solid #fff;
+    background: none;
+    color: #fff;
 }

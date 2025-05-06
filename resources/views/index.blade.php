@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,54 +8,39 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <title>Calculator</title>
 </head>
-<body>
-<div class="container">
-    <div class="box">
-        <form action="" method="post">
-            @csrf
-            <h1>Calculator</h1>
-            <div class="input-group">
-                <label for="num1">Number 1:</label>
-                <input type="number" name="num1" id="num1" required>
-            </div>
-            <div class="input-group">
-                <label for="num2">Number 2:</label>
-                <input type="number" name="num2" id="num2" required>
-            </div>
-            <div class="input-group">
-                <label for="operation">Operation:</label>
-                <select name="operation" id="operation">
-                    <option value="+">+</option>
-                    <option value="-">-</option>
-                    <option value="*">*</option>
-                    <option value="/">/</option>
-                </select>
-            </div>
-            <button type="submit">Calculate</button>
 
-            @if (isset($result))
-                <h2>Result: {{ $result }}</h2>
-            @endif
-            @if (isset($error))
-                <h2 style="color: red;">Error: {{ $error }}</h2>
-            @endif
-            @if (isset($warning))
-                <h2 style="color: orange;">Warning: {{ $warning }}</h2>
-            @endif
-            @if (isset($info))
-                <h2 style="color: blue;">Info: {{ $info }}</h2>
-            @endif
-            @if (isset($success))
-                <h2 style="color: green;">Success: {{ $success }}</h2>
-            @endif
-            @if (isset($debug))
-                <h2 style="color: purple;">Debug: {{ $debug }}</h2>
-            @endif
-            @if (isset($trace))
-                <h2 style="color: brown;">Trace: {{ $trace }}</h2>
-            @endif
-        </form>
+<body>
+    <div class="container">
+        <div class="box">
+            <form action="" method="post">
+                @csrf
+                <h1>Calculator</h1>
+                <div class="card">
+                    <div class="input-group">
+                        <label for="num1">Number 1:</label>
+                        <input type="number" name="num1" id="num1" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="num2">Number 2:</label>
+                        <input type="number" name="num2" id="num2" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="operation">Operation:</label>
+                        <select name="operation" id="operation">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                        </select>
+                    </div>
+
+                </div>
+                <button type="submit">Calculate</button>
+            </form>
+        </div>
     </div>
-</div>
+
+   
 </body>
+
 </html>
